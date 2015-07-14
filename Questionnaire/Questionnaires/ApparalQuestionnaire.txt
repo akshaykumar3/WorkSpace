@@ -1,0 +1,178 @@
+{
+  "titleStringId": "Softline Apparel Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "SoftlinesApparelQ-WhatDamageDoYouSee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet4Question1Ans1": {
+              "stringId": "softlinesApparelQA-StainsAndWrinkles",
+              "defectMap": {
+                "ApparelStain": {
+                  "defectId": "ApparelStain",
+                  "stringId": "Defect-Stains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet4Question1Ans2": {
+              "stringId": "softlinesApparelQA-RipTearHole",
+              "defectMap": {
+                "RipTearHole": {
+                  "defectId": "RipTearHole",
+                  "stringId": "Defect-softlinesApparelQA-RipTearHole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet4Question1Ans3": {
+              "stringId": "softlinesApparelQA-BrokenZip",
+              "defectMap": {
+                "BrokenZipMissingButton": {
+                  "defectId": "BrokenZipMissingButton",
+                  "stringId": "Defect-softlinesApparelQA-BrokenZip",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet4Question1Ans4": {
+              "stringId": "softlinesApparelQA-excessivehair",
+              "defectMap": {
+                "excessivehair": {
+                  "defectId": "excessivehair",
+                  "stringId": "Defect-softlinesApparelQA-excessivehair",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet4Question1Ans6": {
+              "stringId": "softlineApparelQA-noDamage",
+              "isSuperOption": true,
+              "displayOrder": 7
+            },
+            "QSet4Question1Ans7": {
+              "stringId": "ApparelQA-Odor",
+              "defectMap": {
+                "Apparel-Odor": {
+                  "defectId": "Apparel-Odor",
+                  "stringId": "ApparelQA-OdorSmokeOrPerfume",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet4Question1Ans8": {
+              "stringId": "ApparelQA-HygineStrip",
+              "defectMap": {
+                "Apparel-HygineStrip": {
+                  "defectId": "Apparel-HygineStrip",
+                  "stringId": "ApparelQA-HygineStrip",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Itemhasdamage",
+      "isDependent": false,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "SoftlinesApparelQ-itemhasdamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet5",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "AbleToRefurbItem",
+      "isDependent": true,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "SoftlinesApparelQ-AbleToRefurbItem",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

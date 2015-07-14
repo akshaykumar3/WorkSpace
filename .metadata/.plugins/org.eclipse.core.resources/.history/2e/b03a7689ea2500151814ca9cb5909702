@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class InterfacTestClass implements TestInterface {
+
+	/**
+	 * 
+	 */
+	public InterfacTestClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
+	 * @see TestInterface#fn1()
+	 */
+	@Override
+	public void fn1() {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see TestInterface#fn2(int)
+	 */
+	@Override
+	public void fn2(int inp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

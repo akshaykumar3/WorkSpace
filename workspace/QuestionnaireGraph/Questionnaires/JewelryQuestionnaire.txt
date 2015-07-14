@@ -1,0 +1,283 @@
+{
+  "titleStringId": "Jewelry Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Does the item have any signs of damage or wear?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "JewelryQ-itemsignsofwear",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet2Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet2Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "titleStringId": "Is the item packaging damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "JewelryQ-itemPackagingDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet6Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet1Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet6": {
+      "titleStringId": "JewelryQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet6Question1": {
+          "stringId": "What damage do you see?",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet6Question1Ans6": {
+              "stringId": "JewelryQA-doesnotexceed",
+              "isSuperOption": true,
+              "displayOrder": 6
+            },
+            "QSet6Question1Ans7": {
+              "stringId": "JewelryQA-tarnishedItem",
+              "defectMap": {
+                "tarnishedItem": {
+                  "defectId": "tarnishedItem",
+                  "stringId": "Defect-tarnishedItem",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet6Question1Ans4": {
+              "stringId": "JewelryQA-brokenclasp",
+              "defectMap": {
+                "BrokenClasp": {
+                  "defectId": "BrokenClasp",
+                  "stringId": "Defect-BrokenClasp",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet6Question1Ans5": {
+              "stringId": "JewelryQA-missingorloosestone",
+              "defectMap": {
+                "MissingOrLooseStone": {
+                  "defectId": "MissingOrLooseStone",
+                  "stringId": "Defect-MissingOrLooseStone",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet6Question1Ans2": {
+              "stringId": "JewelryQA-scratchesordents",
+              "defectMap": {
+                "ScratchesOrDents": {
+                  "defectId": "ScratchesOrDents",
+                  "stringId": "Defect-ScratchesOrDents",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet6Question1Ans3": {
+              "stringId": "JewelryQA-knottedortanglednecklace",
+              "defectMap": {
+                "KnottedOrTangledNecklace": {
+                  "defectId": "KnottedOrTangledNecklace",
+                  "stringId": "Defect-KnottedOrTangledNecklace",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet6Question1Ans1": {
+              "stringId": "JewelryQA-dirtorgrime",
+              "defectMap": {
+                "DirtOrGrime": {
+                  "defectId": "DirtOrGrime",
+                  "stringId": "Defect-DirtOrGrime",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "JewelryQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "What damage do you see?",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans5": {
+              "stringId": "JewelryQA-customerwritingormarks",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-CustomerWritingsOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet8Question1Ans4": {
+              "stringId": "JewelryQA-wateroroil",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "JewelryQA-morethanonecorner",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "MoreThanOneCrushedCorner": {
+                  "defectId": "MoreThanOneCrushedCorner",
+                  "stringId": "Defect-MoreThanOneCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "JewelryQA-holeinpack",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans7": {
+              "stringId": "JewelryQA-doesnotexceed",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": true,
+              "displayOrder": 7
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "JewelryQA-cutcrush",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

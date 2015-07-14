@@ -1,0 +1,169 @@
+{
+  "titleStringId": "CD Questionnaire",
+  "questionSetMap": {
+    "QSet6": {
+      "titleStringId": "CaseCrushorBroken",
+      "isDependent": true,
+      "questionMap": {
+        "QSet6Question1": {
+          "stringId": "CDQ-IsCaseCrushedorBroken",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet6Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet6Question1Ans1": {
+              "stringId": "yes_answer",
+              "defectMap": {
+                "DamagedCase": {
+                  "defectId": "DamagedCase",
+                  "stringId": "Defect-DamagedCase",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Is the item sealed in plastic shrink wrap?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "CDQ-itemsealedinwrap",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet8",
+              "defectMap": {
+                "MissingWrap": {
+                  "defectId": "MissingWrap",
+                  "stringId": "Defect-MissingWrap",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "CDQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "What damage do you see?",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans4": {
+              "stringId": "CDQA-coverinsertdamaged",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "CoverInsertDamagedorMissing": {
+                  "defectId": "CoverInsertDamagedorMissing",
+                  "stringId": "Defect-CoverInsertDamagedorMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "CDQA-scratchordamageddisc",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "ScratchedOrDamagedDisc": {
+                  "defectId": "ScratchedOrDamagedDisc",
+                  "stringId": "Defect-ScratchedOrDamagedDisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "CDQA-fingerprintsondisc",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "FingerPrintsOnDisc": {
+                  "defectId": "FingerPrintsOnDisc",
+                  "stringId": "Defect-FingerPrintsOnDisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet8Question1Ans6": {
+              "stringId": "CDQA-doesnotexceed",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": true,
+              "displayOrder": 6
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "CDQA-missingdisc",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "MissingDisc": {
+                  "defectId": "MissingDisc",
+                  "stringId": "Defect-MissingDisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

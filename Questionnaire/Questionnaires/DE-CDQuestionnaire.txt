@@ -1,0 +1,156 @@
+{
+  "titleStringId": "PRG CD Questionnaire",
+  "questionSetMap": {
+    "QSet6": {
+      "titleStringId": "Are there signs that customer used the item?",
+      "isDependent": false,
+      "questionMap": {
+        "CD-SignsThatCustomerUsed": {
+          "stringId": "CDQ-SignsThatCustomerUsed",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "CD-No": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet7",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "CD-Yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "What signs of use do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "CD-WhatSignsOfUse": {
+          "stringId": "CDQ-WhatSignsOfUse",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "CDQA-DiscMissing": {
+              "stringId": "CDQA-DiscMissing",
+              "defectMap": {
+                "MissingDisc": {
+                  "defectId": "MissingDisc",
+                  "stringId": "CDQA-DiscMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "CDQA-DamagedOrScratchedDisc": {
+              "stringId": "CDQA-DamagedOrScratchedDisc",
+              "defectMap": {
+                "ScratchedOrDamagedDisc": {
+                  "defectId": "ScratchedOrDamagedDisc",
+                  "stringId": "Defect-scratchordamageddisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "CDQA-NoDamage": {
+              "stringId": "CDQA-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "CDQ-coverInsertDamagedOrMissing": {
+              "stringId": "CDQA-coverInsertDamagedOrMissing",
+              "defectMap": {
+                "CoverInsertDamagedorMissing": {
+                  "defectId": "CoverInsertDamagedorMissing",
+                  "stringId": "CDQA-coverInsertDamagedOrMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "CDQ-DamagedCase": {
+              "stringId": "CDQA-DamagedCase",
+              "defectMap": {
+                "DamagedCase": {
+                  "defectId": "DamagedCase",
+                  "stringId": "CDQA-DamagedCase",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            }
+          }
+        }
+      }
+    },
+    "QSet7": {
+      "titleStringId": "Is the case crushed, broken or cracked?",
+      "isDependent": true,
+      "questionMap": {
+        "CDQ-CrackedOrBorkenOrCrushed": {
+          "stringId": "CDQ-CrackedOrBorkenOrCrushed",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "CD-CrushedCrackedBroken-Yes": {
+              "stringId": "yes_answer",
+              "defectMap": {
+                "DamagedCase": {
+                  "defectId": "DamagedCase",
+                  "stringId": "Defect-DamagedCase",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "CD-CrushedCrackedBroken-No": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

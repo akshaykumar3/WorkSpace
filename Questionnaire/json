@@ -1,0 +1,181 @@
+{
+  "titleStringId": "Apparel Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "What damage or signs of wear do you still see?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "ApparelQ-DamageOrWear",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "FRA3-ApparelQA-ZipOrButton": {
+              "stringId": "FRA3-ApparelQA-ZipOrButton",
+              "defectMap": {
+                "BrokenZipMissingButton": {
+                  "defectId": "BrokenZipMissingButton",
+                  "stringId": "FRA3-ApparelQA-ZipOrButton",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "FRA3-ApparelQA-Wrinkles": {
+              "stringId": "FRA3-ApparelQA-Wrinkles",
+              "defectMap": {
+                "WrinkleOrCreased": {
+                  "defectId": "WrinkleOrCreased",
+                  "stringId": "FRA3-ApparelQA-Wrinkles",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "FRA3-ApparelQA-CutCrushHole": {
+              "stringId": "FRA3-ApparelQA-CutCrushHole",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "FRA3-ApparelQA-CutCrushHole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "FRA3-ApparelQA-ManufacturereDefect": {
+              "stringId": "FRA3-ApparelQA-ManufacturereDefect",
+              "defectMap": {
+                "PrintingOrManufacturingDefect": {
+                  "defectId": "PrintingOrManufacturingDefect",
+                  "stringId": "FRA3-ApparelQA-ManufacturereDefect",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "FRA3-ApparelQA-OtherDamage": {
+              "stringId": "FRA3-ApparelQA-OtherDamage",
+              "defectMap": {
+                "Other": {
+                  "defectId": "Other",
+                  "stringId": "FRA3-ApparelQA-OtherDamage"
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "FRA3-ApparelQA-OdorSmokeOrPerfume": {
+              "stringId": "FRA3-ApparelQA-OdorSmokeOrPerfume",
+              "defectMap": {
+                "Apparel-Odor": {
+                  "defectId": "Apparel-Odor",
+                  "stringId": "FRA3-ApparelQA-OdorSmokeOrPerfume",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "FRA3-ApparelQA-StainsDeodrantMakeup": {
+              "stringId": "FRA3-ApparelQA-StainsDeodrantMakeup",
+              "defectMap": {
+                "ApparelStain": {
+                  "defectId": "ApparelStain",
+                  "stringId": "FRA3-ApparelQA-StainsDeodrantMakeup",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "Apparel-DamageOrWear-No": {
+              "stringId": "Apparel-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Are you able to make the item sellable?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "Apparel-itemSellable",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "Apparel-itemSellable-yes": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "Apparel-itemSellable-no": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Does the item have any stains or damage?",
+      "isDependent": false,
+      "questionMap": {
+        "Apparel-stainsOrDamage": {
+          "stringId": "Apparel-stainsOrDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "Apparel-stainsOrDamage-yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "Apparel-stainsOrDamage-no": {
+              "stringId": "Apparel-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

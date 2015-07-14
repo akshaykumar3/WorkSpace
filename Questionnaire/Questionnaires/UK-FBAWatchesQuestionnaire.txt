@@ -1,0 +1,304 @@
+{
+  "titleStringId": "Watches Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "WatchesQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "WatchesQ-WhatDamageDoYouSee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet4Question1Ans11": {
+              "stringId": "WatchesQA-DeadBattery",
+              "defectMap": {
+                "DeadBattery": {
+                  "defectId": "DeadBattery",
+                  "stringId": "Defect-DeadBattery",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 11
+            },
+            "QSet4Question1Ans1": {
+              "stringId": "WatchesQA-DirtorGrime",
+              "defectMap": {
+                "DirtorGrime": {
+                  "defectId": "DirtorGrime",
+                  "stringId": "Defect-DirtorGrime",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet4Question1Ans2": {
+              "stringId": "WatchesQA-Hair",
+              "defectMap": {
+                "Hair": {
+                  "defectId": "Hair",
+                  "stringId": "Defect-Hair",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet4Question1Ans3": {
+              "stringId": "WatchesQA-Scratches",
+              "defectMap": {
+                "Scratches": {
+                  "defectId": "Scratches",
+                  "stringId": "Defect-Scratches",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet4Question1Ans4": {
+              "stringId": "WatchesQA-BrokenClasp",
+              "defectMap": {
+                "BrokenClasp": {
+                  "defectId": "BrokenClasp",
+                  "stringId": "Defect-BrokenClasp",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet4Question1Ans5": {
+              "stringId": "WatchesQA-WearonStrap",
+              "defectMap": {
+                "WearonStrap": {
+                  "defectId": "WearonStrap",
+                  "stringId": "Defect-WearonStrap",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet4Question1Ans6": {
+              "stringId": "WatchesQA-LinksRemoved",
+              "defectMap": {
+                "LinksRemoved": {
+                  "defectId": "LinksRemoved",
+                  "stringId": "Defect-LinksRemoved",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet4Question1Ans9": {
+              "stringId": "WatchesQA-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Does the item have any damage or signs of wear?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "WatchesQ-itemDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "WatchesQA-NoDamageExceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3uestion1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Is the item packaging damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "watchesQ-itemPackagingDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "watchesQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "watchesQ-whatdamagedoyousee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans5": {
+              "stringId": "watchesQA-customerwritingormarks",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-CustomerWritingsOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet8Question1Ans4": {
+              "stringId": "watchesQA-wateroroil",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "watchesQA-morethanonecorner",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "MoreThanOneCrushedCorner": {
+                  "defectId": "MoreThanOneCrushedCorner",
+                  "stringId": "Defect-MoreThanOneCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "watchesQA-holeinpack",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans7": {
+              "stringId": "watchesQA-doesnotexceed",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": true,
+              "displayOrder": 7
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "watchesQA-cutcrush",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

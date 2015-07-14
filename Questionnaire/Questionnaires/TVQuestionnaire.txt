@@ -1,0 +1,134 @@
+{
+  "titleStringId": "Watches Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "Is that seal intact?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "tvQ-sealIntact",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet4Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet8",
+              "defectMap": {
+                "SealBroken": {
+                  "defectId": "SealBroken",
+                  "stringId": "Defect-BrokenSeal",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet4uestion1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Is there a factory seal?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "tvQ-factorySeal",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet3uestion1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Is the television box damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "tvQ-boxDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "tvQA-noDamage",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "BoxDamage": {
+                  "defectId": "BoxDamage",
+                  "stringId": "Defect-BoxDamage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "Does the television have a broken screen?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "tvQ-brokenScreen",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet8uestion1Ans1": {
+              "stringId": "yes_answer",
+              "defectMap": {
+                "BoxDamage": {
+                  "defectId": "BoxDamage",
+                  "stringId": "Defect-BoxDamage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

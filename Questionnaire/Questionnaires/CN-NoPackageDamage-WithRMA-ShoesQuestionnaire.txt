@@ -1,0 +1,197 @@
+{
+  "titleStringId": "Shoes Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Are you able to make the item Sellable?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "CN-shoesQ-isItemSellable",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet2Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet2Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "titleStringId": "What damage or signs of wear do you still see?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "CN-ShoesQ-damageSignsOfWear",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet1Question1Answer9": {
+              "stringId": "CN-ShoesQ-leftRightDontMatch",
+              "defectMap": {
+                "SizeMismatch": {
+                  "defectId": "SizeMismatch",
+                  "stringId": "Defect-CN-ShoesQ-leftRightDontMatch",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 9
+            },
+            "QSet1Question1Answer4": {
+              "stringId": "CN-ShoesQ-creasing",
+              "defectMap": {
+                "Creasing": {
+                  "defectId": "Creasing",
+                  "stringId": "Defect-Creasing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet1Question1Answer3": {
+              "stringId": "CN-ShoesQ-interiorDirty",
+              "defectMap": {
+                "InsideDirty": {
+                  "defectId": "InsideDirty",
+                  "stringId": "Defect-InsideDirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet1Question1Answer10": {
+              "stringId": "CN-LuggageQ-noDamageExceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 10
+            },
+            "QSet1Question1Answer2": {
+              "stringId": "CN-ShoesQ-exteriorIsDirty",
+              "defectMap": {
+                "Bottom-Dirty": {
+                  "defectId": "Bottom-Dirty",
+                  "stringId": "ShoeQA-Bottom-Dirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet1Question1Answer1": {
+              "stringId": "CN-ShoesQ-itemShoeBoxDamaged",
+              "defectMap": {
+                "PackageDamage": {
+                  "defectId": "PackageDamage",
+                  "stringId": "Defect-CN-ShoesQ-itemShoeBoxDamaged",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet1Question1Answer8": {
+              "stringId": "CN-ShoesQ-damagedLacesZippersFasteners",
+              "defectMap": {
+                "DamagedLacesZippersFastners": {
+                  "defectId": "DamagedLacesZippersFastners",
+                  "stringId": "Defect-DamagedLacesZippersFastners",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet1Question1Answer7": {
+              "stringId": "CN-ShoesQ-looseStiching",
+              "defectMap": {
+                "LooseStiching": {
+                  "defectId": "LooseStiching",
+                  "stringId": "Defect-LooseStiching",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "QSet1Question1Answer6": {
+              "stringId": "CN-ShoesQ-odor",
+              "defectMap": {
+                "Odor": {
+                  "defectId": "Odor",
+                  "stringId": "Defect-Odor",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet1Question1Answer5": {
+              "stringId": "CN-ShoesQ-holesOrTear",
+              "defectMap": {
+                "Holes": {
+                  "defectId": "Holes",
+                  "stringId": "Defect-Holes",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

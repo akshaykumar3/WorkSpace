@@ -1,0 +1,181 @@
+{
+  "titleStringId": "FRA3 Softline Shoe Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "Are you able to refurbish the item?",
+      "isDependent": true,
+      "questionMap": {
+        "ShoeQ-WhatDamageDoYouStillSee": {
+          "stringId": "ShoeQ-WhatDamageDoYouStillSee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "FRA3-ShoeQA-ManufacturereError": {
+              "stringId": "FRA3-ShoeQA-ManufacturereError",
+              "defectMap": {
+                "ManufacturingDefect": {
+                  "defectId": "ManufacturingDefect",
+                  "stringId": "FRA3-ShoeQA-ManufacturereError",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "FRA3-ShoeQA-HolesOrTear": {
+              "stringId": "FRA3-ShoeQA-HolesOrTear",
+              "defectMap": {
+                "HolesOrTear": {
+                  "defectId": "HolesOrTear",
+                  "stringId": "FRA3-ShoeQA-HolesOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "FRA3-ShoeQA-SizeMismatch": {
+              "stringId": "ShoeQA-SizeMismatch",
+              "defectMap": {
+                "SizeMismatch": {
+                  "defectId": "SizeMismatch",
+                  "stringId": "ShoeQA-SizeMismatch",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "FRA3-ShoeQA-StainsSmudgesScuffs": {
+              "stringId": "FRA3-ShoeQA-StainsSmudgesScuffs",
+              "defectMap": {
+                "StainsSmudgesScuffs": {
+                  "defectId": "StainsSmudgesScuffs",
+                  "stringId": "FRA3-ShoeQA-StainsSmudgesScuffs",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "FRA3-ShoeQA-Other": {
+              "stringId": "FRA3-ShoeQA-Other",
+              "defectMap": {
+                "Other": {
+                  "defectId": "Other",
+                  "stringId": "FRA3-ShoeQA-Other",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "FRA3-ShoeQA-DamagedLaces-Zippers-Fastners": {
+              "stringId": "ShoeQA-DamagedLaces-Zippers-Fastners",
+              "defectMap": {
+                "DamagedLaces-Zippers-Fastners": {
+                  "defectId": "DamagedLaces-Zippers-Fastners",
+                  "stringId": "Defect-Right-DamagedLaces-Zippers-Fastners",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "FRA3-ShoeQA-Worn": {
+              "stringId": "FRA3-ShoeQA-Worn",
+              "defectMap": {
+                "Shoe-Creasing": {
+                  "defectId": "Shoe-Creasing",
+                  "stringId": "FRA3-ShoeQA-Worn",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "damgeOrWear-NoDamage": {
+              "stringId": "ShoeQA-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "FRA3-ShoeQA-Outworn": {
+              "stringId": "FRA3-ShoeQA-Outworn",
+              "defectMap": {
+                "OutWorn": {
+                  "defectId": "OutWorn",
+                  "stringId": "FRA3-ShoeQA-Outworn",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Does the item have any stains or damage",
+      "isDependent": false,
+      "questionMap": {
+        "ShoeQ-StainsOrDamage": {
+          "stringId": "ShoeQ-StainsOrDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "ShoeQA-HasStains": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "StainsOrDamage-NoDamage": {
+              "stringId": "ShoeQA-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

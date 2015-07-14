@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public interface TestInterface {
+	
+	public void fn1() {
+		
+	}
+}

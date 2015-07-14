@@ -1,0 +1,158 @@
+{
+  "titleStringId": "Luggage SIOC Questionnaire",
+  "questionSetMap": {
+    "QSet1": {
+      "titleStringId": "What damage or signs of wear do you still see?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "CN-LuggageQ-damageSignsOfWear",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet1Question1Answer9": {
+              "stringId": "CN-LuggageQ-noDamageExceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 9
+            },
+            "QSet1Question1Answer4": {
+              "stringId": "CN-LuggageQ-handlesWheelsDoNotWork",
+              "defectMap": {
+                "HandlesNotRetract": {
+                  "defectId": "HandlesNotRetract",
+                  "stringId": "Defect-softlinesLuggageQA-HandlesNotRetract",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet1Question1Answer3": {
+              "stringId": "CN-LuggageQ-dirtScuffMarksOnWheels",
+              "defectMap": {
+                "DirtScuffonWheels": {
+                  "defectId": "DirtScuffonWheels",
+                  "stringId": "Defect-softlinesLuggageQA-DirtScuffonWheels",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet1Question1Answer2": {
+              "stringId": "CN-LuggageQ-stains",
+              "defectMap": {
+                "Stains": {
+                  "defectId": "Stains",
+                  "stringId": "Defect-CN-LuggageQ-stains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet1Question1Answer1": {
+              "stringId": "CN-LuggageQ-itemPackagingDamage",
+              "defectMap": {
+                "PackageDamage": {
+                  "defectId": "PackageDamage",
+                  "stringId": "Defect-CN-LuggageQ-itemPackagingDamage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet1Question1Answer8": {
+              "stringId": "CN-LuggageQ-lockCannotBeOpened",
+              "defectMap": {
+                "Locked": {
+                  "defectId": "Locked",
+                  "stringId": "Defect-CN-LuggageQ-lockCannotBeOpened",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet1Question1Answer7": {
+              "stringId": "CN-LuggageQ-brokenZippers",
+              "defectMap": {
+                "BrokenZip": {
+                  "defectId": "BrokenZip",
+                  "stringId": "Defect-CN-LuggageQ-brokenZippers",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "QSet1Question1Answer6": {
+              "stringId": "CN-LuggageQ-ripTearHole",
+              "defectMap": {
+                "RipTearHole": {
+                  "defectId": "RipTearHole",
+                  "stringId": "Defect-CN-LuggageQ-ripTearHole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet1Question1Answer5": {
+              "stringId": "CN-LuggageQ-scratchDentScuff",
+              "defectMap": {
+                "ScratchDentScuffonSurface": {
+                  "defectId": "ScratchDentScuffonSurface",
+                  "stringId": "Defect-CN-LuggageQ-scratchDentScuff",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

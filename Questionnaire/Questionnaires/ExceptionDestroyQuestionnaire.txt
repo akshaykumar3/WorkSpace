@@ -1,0 +1,102 @@
+{
+  "titleStringId": "Exception Destroy Questionnaire",
+  "questionSetMap": {
+    "QSet1": {
+      "titleStringId": "Does item have any damage?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "exceptionDestroyQ-whatDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet1Question1Ans5": {
+              "stringId": "exceptionDestroyQ-Other",
+              "defectMap": {
+                "Other": {
+                  "defectId": "Other",
+                  "stringId": "Defect-Other",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet1Question1Ans4": {
+              "stringId": "exceptionDestroyQ-OpenWeapon",
+              "defectMap": {
+                "OpenWeapon": {
+                  "defectId": "OpenWeapon",
+                  "stringId": "Defect-OpenWeapon",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet1Question1Ans3": {
+              "stringId": "exceptionDestroyQ-Sharps",
+              "defectMap": {
+                "Sharps": {
+                  "defectId": "Sharps",
+                  "stringId": "Defect-Sharps",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet1Question1Ans2": {
+              "stringId": "exceptionDestroyQ-LeakingFluid",
+              "defectMap": {
+                "LeakingFluid": {
+                  "defectId": "LeakingFluid",
+                  "stringId": "Defect-LeakingFluid",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet1Question1Ans1": {
+              "stringId": "exceptionDestroyQ-brokenGlass",
+              "defectMap": {
+                "BrokenGlass": {
+                  "defectId": "BrokenGlass",
+                  "stringId": "Defect-BrokenGlass",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

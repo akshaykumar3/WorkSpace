@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;A&apos; in &apos;TreeFlattening.buildTree()&apos; to &apos;a&apos;&#x0A;- Original project: &apos;Flipkart&apos;&#x0A;- Original element: &apos;TreeFlattening.buildTree().A&apos;&#x0A;- Renamed element: &apos;A&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;A&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{TreeFlattening.java[TreeFlattening~buildTree@A!1581!1611!1590!1590!QTreeNode;!0!false" name="a" references="true" stamp="1436427888863" version="1.0"/>
+</session>

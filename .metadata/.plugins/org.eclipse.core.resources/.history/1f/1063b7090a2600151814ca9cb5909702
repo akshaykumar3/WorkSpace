@@ -1,0 +1,96 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class TreeFlattening {
+
+	/**
+	 * 
+	 */
+	public TreeFlattening() {
+		
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		TreeNode root = buildTree();
+		String value = "C";
+		printTuppleData(value,root);
+		String key = "id";
+		value = "24";
+		printContainingValues(key, value, root);
+	}
+	
+	private static void printTuppleData(String value, TreeNode root) {
+		Map<String, String> tuppleData = getTuppleData(value, root);
+		System.out.println(tuppleData);
+	}
+
+	private static void printContainingValues(String key, String value, TreeNode node) {
+		if(null == node)
+			return;
+		if(node.getTupple().containsKey(key) && value.equals(node.getTupple().get(key))) {
+			System.out.println(node.getValue());
+		}
+		printContainingValues(key, value, node.getLeftChild());
+		printContainingValues(key, value, node.getRightChild());
+	}
+
+	private static Map<String, String> getTuppleData(String value, TreeNode node) {
+		if(null == node) {
+			return null;
+		}
+		if(value.equals(node.getValue())) {
+			return node.getTupple();
+		}
+		Map<String, String> tempData = getTuppleData(value, node.getLeftChild());
+		return (null != tempData) ? tempData : getTuppleData(value, node.getRightChild());
+	}
+
+	private static TreeNode buildTree() {
+		TreeNode A = new TreeNode("A");
+		Map<String, String> tupple = new HashMap<String, String>();
+		tupple.put("name", "abc");
+		tupple.put("id", "5");
+		tupple.put("place", "Tirupati");
+		A.setFromCurrentTupple(tupple);
+		
+		TreeNode B = new TreeNode("B", A.getTupple());
+		tupple.clear();
+		tupple.put("name", "abc");
+		tupple.put("id", "24");
+		B.setFromCurrentTupple(tupple);
+		
+		TreeNode C = new TreeNode("C", B.getTupple());
+		tupple.clear();
+		tupple.put("name", "xyz");
+		C.setFromCurrentTupple(tupple);
+		
+		TreeNode D = new TreeNode("D", B.getTupple());
+		tupple.clear();
+		tupple.put("place", "Bangalore");
+		tupple.put("job", "SoftwareEngineer");
+		D.setFromCurrentTupple(tupple);
+		
+		TreeNode E = new TreeNode("E", C.getTupple());
+		tupple.clear();
+		tupple.put("id", "E");
+		E.setFromCurrentTupple(tupple);
+		
+		A.setLeftChild(B);
+		A.setRightChild(null);
+		return A;
+	}
+
+}

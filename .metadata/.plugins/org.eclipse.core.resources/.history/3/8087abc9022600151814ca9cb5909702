@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class TreeNode {
+	
+	private String value;
+
+	/**
+	 * 
+	 */
+	public TreeNode() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

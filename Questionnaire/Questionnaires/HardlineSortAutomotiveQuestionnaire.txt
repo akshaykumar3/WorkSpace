@@ -1,0 +1,381 @@
+{
+  "titleStringId": "hardlineAutomotiveSort Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Is the factory seal Intact?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "hardlineAutomotiveSortQ-factorySealIntact",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet2Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet2Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "SealBroken": {
+                  "defectId": "SealBroken",
+                  "stringId": "Defect-SealBroken",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet4": {
+      "titleStringId": "Is the factory seal Intact?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "hardlineAutomotiveSortQ-factorySealIntact",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet4Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet4Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Does the item have tamper evident factory seal?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "hardlineAutomotiveSortQ-tamperEvidentSeal",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3Question1Ans3": {
+              "stringId": "hardlineAutomotiveSortQA-OtherSealingMethod",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet6": {
+      "titleStringId": "Are there signs that the customer opened or used the item?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet6Question1": {
+          "stringId": "hardlineAutomotiveSortQ-didCustomerUseItem",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet6Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet6Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet7",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Is the item packaging damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "hardlineAutomotiveSortQ-itemPackagingDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "hardlineAutomotiveSortQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "What damage do you see?",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans5": {
+              "stringId": "hardlineAutomotiveSortQA-customerwritingormarks",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-CustomerWritingsOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet8Question1Ans4": {
+              "stringId": "hardlineAutomotiveSortQA-wateroroil",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "hardlineAutomotiveSortQA-morethanonecorner",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "MoreThanOneCrushedCorner": {
+                  "defectId": "MoreThanOneCrushedCorner",
+                  "stringId": "Defect-MoreThanOneCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "hardlineAutomotiveSortQA-holeinpack",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans8": {
+              "stringId": "hardlineAutomotiveNonSortQA-missingPackaging",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "MissingPackaging": {
+                  "defectId": "MissingPackaging",
+                  "stringId": "Defect-MissingPackaging",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet8Question1Ans7": {
+              "stringId": "hardlineAutomotiveSortQA-doesnotexceed",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "tapeSealOrShippingLabel": {
+              "stringId": "hardlineSortQA-tapeSealOrShippingLabel",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "TapeSealOrShippingLabel": {
+                  "defectId": "TapeSealOrShippingLabel",
+                  "stringId": "Defect-hardline-tapeSealOrShippingLabel",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "hardlineAutomotiveSortQA-cutcrush",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    },
+    "QSet7": {
+      "titleStringId": "hardlineAutomotiveSortQ-whatSigns",
+      "isDependent": true,
+      "questionMap": {
+        "QSet7Question1": {
+          "stringId": "hardlineAutomotiveSortQ-whatSigns",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet7Question1Ans3": {
+              "stringId": "hardlineAutomotiveSortQA-damagedOrBroken",
+              "defectMap": {
+                "DamagedBroken": {
+                  "defectId": "DamagedBroken",
+                  "stringId": "Defect-DamagedBroken",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet7Question1Ans4": {
+              "stringId": "hardlineAutomotiveSortQA-missedOrUsedParts",
+              "defectMap": {
+                "MissingOrUsedParts": {
+                  "defectId": "MissingOrUsedParts",
+                  "stringId": "Defect-MissingOrUsedParts",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet7Question1Ans1": {
+              "stringId": "hardlineAutomotiveSortQA-signsofinstall",
+              "defectMap": {
+                "SignsofInstall": {
+                  "defectId": "SignsofInstall",
+                  "stringId": "Defect-SignsofInstall",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet7Question1Ans7": {
+              "stringId": "hardlineAutomotiveNonSortQA-scratchedchromepart",
+              "defectMap": {
+                "ScratchedChromePart": {
+                  "defectId": "ScratchedChromePart",
+                  "stringId": "Defect-ScratchedChromePart",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet7Question1Ans6": {
+              "stringId": "hardlineAutomotiveSortQA-noDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

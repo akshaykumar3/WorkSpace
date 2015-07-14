@@ -1,0 +1,90 @@
+{
+  "titleStringId": "",
+  "questionSetMap": {
+    "QSet8": {
+      "titleStringId": "BeddingNonSortable Undeliverable Questionnaire",
+      "isDependent": false,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "BeddingNonSortableQ-whatdamagedoyousee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans4": {
+              "stringId": "BeddingNonSortableQA-wateroroil",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "BeddingNonSortableQA-morethantwocorner",
+              "defectMap": {
+                "MoreThanTwoCrushedCorner": {
+                  "defectId": "MoreThanTwoCrushedCorner",
+                  "stringId": "Defect-MoreThanTwoCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "BeddingNonSortableQA-holeinpack",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans7": {
+              "stringId": "BeddingNonSortableQA-doesnotexceed",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "BeddingNonSortableQA-cutcrush",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

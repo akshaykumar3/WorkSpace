@@ -1,0 +1,136 @@
+{
+  "titleStringId": "Apparel Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "What damage or signs of wear do you still see?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "ApparelQ-DamageOrWear",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "ApparelQA-ZipOrButton": {
+              "stringId": "ApparelQA-ZipOrButton",
+              "defectMap": {
+                "BrokenZipMissingButton": {
+                  "defectId": "BrokenZipMissingButton",
+                  "stringId": "ApparelQA-ZipOrButton",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "ApparelQA-OdorSmokeOrPerfume": {
+              "stringId": "ApparelQA-OdorSmokeOrPerfume",
+              "defectMap": {
+                "Apparel-Odor": {
+                  "defectId": "Apparel-Odor",
+                  "stringId": "ApparelQA-OdorSmokeOrPerfume",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "ApparelQA-HoleTearRip": {
+              "stringId": "ApparelQA-HoleTearRip",
+              "defectMap": {
+                "RipTearHole": {
+                  "defectId": "RipTearHole",
+                  "stringId": "ApparelQA-HoleTearRip",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "ApparelQA-StainsDeodrantMakeup": {
+              "stringId": "ApparelQA-StainsDeodrantMakeup",
+              "defectMap": {
+                "ApparelStain": {
+                  "defectId": "ApparelStain",
+                  "stringId": "ApparelQA-StainsDeodrantMakeup",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "Apparel-DamageOrWear-No": {
+              "stringId": "Apparel-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Are you able to make the item sellable?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "Apparel-itemSellable",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "Apparel-itemSellable-yes": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "Apparel-itemSellable-no": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Does the item have any stains or damage?",
+      "isDependent": false,
+      "questionMap": {
+        "Apparel-stainsOrDamage": {
+          "stringId": "Apparel-stainsOrDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "Apparel-stainsOrDamage-yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "Apparel-stainsOrDamage-no": {
+              "stringId": "Apparel-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

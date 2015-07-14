@@ -1,0 +1,67 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class TreeFlattening {
+
+	/**
+	 * 
+	 */
+	public TreeFlattening() {
+		
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		TreeNode root = buildTree();
+		String value = "";
+		Map<String, String> tuppleData = getTuppleData(value, root);
+		// Print Tupple values.
+		String key = "";
+		printContainingValues(key, root);
+	}
+	
+	private static void printContainingValues(String key, TreeNode node) {
+		if(null == node)
+			return;
+		if(node.getTupple().containsKey(key)) {
+			System.out.println(node.getValue());
+		}
+		printContainingValues(key, node.getLeftChild());
+		printContainingValues(key, node.getRightChild());
+	}
+
+	private static Map<String, String> getTuppleData(String value, TreeNode node) {
+		if(null == node) {
+			return null;
+		}
+		if(value.equals(node.getValue())) {
+			return node.getTupple();
+		}
+		Map<String, String> tempData = getTuppleData(value, node.getLeftChild());
+		return (null != tempData) ? tempData : getTuppleData(value, node.getRightChild());
+	}
+
+	private static TreeNode buildTree() {
+		TreeNode A = new TreeNode("A");
+		TreeNode B = new TreeNode("B");
+		TreeNode C = new TreeNode("C");
+		TreeNode D = new TreeNode("D");
+		TreeNode E = new TreeNode("E");
+		Map<String, String> tupple = new HashMap<String, String>();
+		tupple.put("name", "abc");
+		return A;
+	}
+
+}

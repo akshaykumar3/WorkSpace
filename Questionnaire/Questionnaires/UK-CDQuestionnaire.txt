@@ -1,0 +1,129 @@
+{
+  "titleStringId": "CD Questionnaire",
+  "questionSetMap": {
+    "QSet6": {
+      "titleStringId": "CaseCrushorBroken",
+      "isDependent": false,
+      "questionMap": {
+        "QSet6Question1": {
+          "stringId": "CDQ-IsCaseCrushedorBroken",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet6Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet6Question1Ans1": {
+              "stringId": "yes_answer",
+              "defectMap": {
+                "DamagedCase": {
+                  "defectId": "DamagedCase",
+                  "stringId": "Defect-damagedcase",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "CDQ-whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "What damage do you see?",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans4": {
+              "stringId": "CDQA-coverinsertdamaged",
+              "defectMap": {
+                "CoverInsertDamagedorMissing": {
+                  "defectId": "CoverInsertDamagedorMissing",
+                  "stringId": "Defect-CoverInsertDamagedorMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "CDQA-scratchordamageddisc",
+              "defectMap": {
+                "ScratchedOrDamagedDisc": {
+                  "defectId": "ScratchedOrDamagedDisc",
+                  "stringId": "Defect-scratchordamageddisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "CDQA-fingerprintsondisc",
+              "defectMap": {
+                "FingerPrintsOnDisc": {
+                  "defectId": "FingerPrintsOnDisc",
+                  "stringId": "Defect-fingerprintsondisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet8Question1Ans6": {
+              "stringId": "CDQA-doesnotexceed",
+              "isSuperOption": true,
+              "displayOrder": 6
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "CDQA-missingdisc",
+              "defectMap": {
+                "MissingDisc": {
+                  "defectId": "MissingDisc",
+                  "stringId": "Defect-missingdisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "titleStringId": "Apparel Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Are you able to make the item Sellable?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "CN-apparelQ-isItemSellable",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet2Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet2Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "CN-apparelQ-damage-or-signs-of-wear",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "ExcessiveHair": {
+              "stringId": "CN-apparelQ-excessiveHair",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "excessivehair": {
+                  "defectId": "excessivehair",
+                  "stringId": "Defect-apparelQ-excessiveHair",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "Wrinkle": {
+              "stringId": "CN-apparelQ-wrinkle",
+              "defectMap": {
+                "ApparelWrinkles": {
+                  "defectId": "ApparelWrinkles",
+                  "stringId": "Defect-apparelQ-wrinkle",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "RipTearOrHole": {
+              "stringId": "CN-apparelQ-ripTearOrHole",
+              "defectMap": {
+                "RipTearHole": {
+                  "defectId": "RipTearHole",
+                  "stringId": "Defect-apparelQ-ripTearOrHole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "MissingButtonOrZip": {
+              "stringId": "CN-apparelQ-missingButtonOrZip",
+              "defectMap": {
+                "BrokenZipMissingButton": {
+                  "defectId": "BrokenZipMissingButton",
+                  "stringId": "Defect-apparelQ-missingButtonOrZip",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "LabelsMissing": {
+              "stringId": "CN-apparelQ-missingLabels",
+              "defectMap": {
+                "LabelsMissing": {
+                  "defectId": "LabelsMissing",
+                  "stringId": "Defect-apparelQ-missingLabels",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "Odor": {
+              "stringId": "CN-apparelQ-odor",
+              "defectMap": {
+                "Apparel-Odor": {
+                  "defectId": "Apparel-Odor",
+                  "stringId": "Defect-apparelQ-odor",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "Stains": {
+              "stringId": "CN-apparelQ-stains",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "ApparelStain": {
+                  "defectId": "ApparelStain",
+                  "stringId": "Defect-apparelQ-stains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "FastnerMissing": {
+              "stringId": "CN-apparelQ-fastnerMissing",
+              "defectMap": {
+                "FastnerMissing": {
+                  "defectId": "FastnerMissing",
+                  "stringId": "Defect-apparelQ-fastnerMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "NoDamage": {
+              "stringId": "CN-apparelQ-noDamageExceedStandard",
+              "isSuperOption": true,
+              "displayOrder": 9
+            }
+          }
+        }
+      }
+    }
+  }
+}

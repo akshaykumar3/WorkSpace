@@ -1,0 +1,274 @@
+{
+  "titleStringId": "Book Questionnaire",
+  "questionSetMap": {
+    "QSet10": {
+      "titleStringId": "What damage over DS do you see",
+      "isDependent": true,
+      "questionMap": {
+        "DE-bookQ-damageOverDS": {
+          "stringId": "DE-bookQ-damageOverDS",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "DE-bookQA-defectsOnCuttingEdge": {
+              "stringId": "DE-bookQA-defectsOnCuttingEdge",
+              "defectMap": {
+                "DefectsOnCuttingEdge": {
+                  "defectId": "DefectsOnCuttingEdge",
+                  "stringId": "DE-bookQA-defectsOnCuttingEdge",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "DE-bookQA-scratchesOrDents": {
+              "stringId": "DE-bookQA-scratchesOrDents",
+              "defectMap": {
+                "ScratchesOrDents": {
+                  "defectId": "ScratchesOrDents",
+                  "stringId": "DE-bookQA-scratchesOrDents",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "DE-bookQA-tearsCoverOrSpine": {
+              "stringId": "DE-bookQA-tearsCoverOrSpine",
+              "defectMap": {
+                "TearsCoverOrSpine": {
+                  "defectId": "TearsCoverOrSpine",
+                  "stringId": "DE-bookQA-tearsCoverOrSpine",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 12
+            },
+            "DE-bookQA-NoDamageExceedingStandards": {
+              "stringId": "DE-bookQA-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "DE-bookQA-missingPages": {
+              "stringId": "DE-bookQA-missingPages",
+              "defectMap": {
+                "MissingPages": {
+                  "defectId": "MissingPages",
+                  "stringId": "DE-bookQA-missingPages",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    },
+                    {
+                      "weight": 20,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "DE-bookQA-printingOrManufacturingDefect": {
+              "stringId": "DE-bookQA-printingOrManufacturingDefect",
+              "defectMap": {
+                "PrintingOrManufacturingDefect": {
+                  "defectId": "PrintingOrManufacturingDefect",
+                  "stringId": "DE-bookQA-printingOrManufacturingDefect",
+                  "defectOwnerList": [
+                    {
+                      "weight": 40,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "DE-bookQA-compressionOnEdge": {
+              "stringId": "DE-bookQA-compressionOnEdge",
+              "defectMap": {
+                "CompressionOnEdge": {
+                  "defectId": "CompressionOnEdge",
+                  "stringId": "DE-bookQA-compressionOnEdge",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "DE-bookQA-pealedEdges": {
+              "stringId": "DE-bookQA-pealedEdges",
+              "defectMap": {
+                "PealedEdges": {
+                  "defectId": "PealedEdges",
+                  "stringId": "DE-bookQA-pealedEdges",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 10
+            },
+            "DE-bookQA-damageByMoisture": {
+              "stringId": "DE-bookQA-damageByMoisture",
+              "defectMap": {
+                "DamageByMoisture": {
+                  "defectId": "DamageByMoisture",
+                  "stringId": "DE-bookQA-damageByMoisture",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    },
+                    {
+                      "weight": 20,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "DE-bookQA-tearsPages": {
+              "stringId": "DE-bookQA-tearsPages",
+              "defectMap": {
+                "TearsPages": {
+                  "defectId": "TearsPages",
+                  "stringId": "DE-bookQA-tearsPages",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 13
+            },
+            "DE-bookQA-stainsOrColorDefects": {
+              "stringId": "DE-bookQA-stainsOrColorDefects",
+              "defectMap": {
+                "StainsOrColorDefects": {
+                  "defectId": "StainsOrColorDefects",
+                  "stringId": "DE-bookQA-stainsOrColorDefects",
+                  "defectOwnerList": [
+                    {
+                      "weight": 40,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "DE-bookQA-bend-coverOrSpineOrCorner": {
+              "stringId": "DE-bookQA-bend-coverOrSpineOrCorner",
+              "defectMap": {
+                "BendCoverOrSpineOrCorner": {
+                  "defectId": "BendCoverOrSpineOrCorner",
+                  "stringId": "DE-bookQA-bend-coverOrSpineOrCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 9
+            },
+            "DE-bookQA-cuttingsWritings": {
+              "stringId": "DE-bookQA-cuttingsWritings",
+              "defectMap": {
+                "CuttingsWritings": {
+                  "defectId": "CuttingsWritings",
+                  "stringId": "DE-bookQA-cuttingsWritings",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "DE-bookQA-bendPages": {
+              "stringId": "DE-bookQA-bendPages",
+              "defectMap": {
+                "BendPages": {
+                  "defectId": "BendPages",
+                  "stringId": "DE-bookQA-bendPages",
+                  "defectOwnerList": [
+                    {
+                      "weight": 10,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 11
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Is there any visible damage to the book?",
+      "isDependent": false,
+      "questionMap": {
+        "DE-bookQ-visibleDamage": {
+          "stringId": "DE-bookQ-visibleDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "DE-bookQ-visibleDamage-yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet10",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "DE-bookQA-NoDamage": {
+              "stringId": "DE-bookQA-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

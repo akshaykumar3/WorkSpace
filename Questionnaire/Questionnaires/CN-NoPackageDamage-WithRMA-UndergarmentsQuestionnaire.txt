@@ -1,0 +1,39 @@
+{
+  "titleStringId": "Undergarments Questionnaire",
+  "questionSetMap": {
+    "QSet1": {
+      "titleStringId": "Is polybag broken?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Qestion1": {
+          "stringId": "CN-UndergarmentsQ-IsPolybagBroken",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet1Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet1Question1Ans1": {
+              "stringId": "yes_answer",
+              "defectMap": {
+                "PolybagDamaged": {
+                  "defectId": "PolybagDamaged",
+                  "stringId": "Defect-undergarmentQ-PloybagDamaged",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

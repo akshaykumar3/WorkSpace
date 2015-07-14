@@ -1,0 +1,121 @@
+digraph G {
+subgraph QSet11{ 
+label = "Check for cover and page damages";
+style=filled;
+color=lightgrey;
+QSet11Question1 -> QSet11Question1Ans8;
+QSet11Question1 -> QSet11Question1Ans5;
+QSet11Question1 -> QSet11Question1Ans4;
+QSet11Question1 -> QSet11Question1Ans6;
+QSet11Question1 -> QSet11Question1Ans1;
+QSet11Question1 -> QSet11Question1Ans3;
+QSet11Question1 -> QSet11Question1Ans2;
+QSet11Question2 -> QSet11Question2Ans5;
+QSet11Question2 -> QSet11Question2Ans6;
+QSet11Question2 -> QSet11Question2Ans3;
+QSet11Question2 -> QSet11Question2Ans4;
+QSet11Question2 -> QSet11Question2Ans7;
+QSet11Question2 -> QSet11Question2Ans8;
+QSet11Question2 -> QSet11Question2Ans1;
+QSet11Question2 -> QSet11Question2Ans2;
+}
+subgraph QSet2{ 
+label = "booksQ-are-they-accurate";
+style=filled;
+color=lightgrey;
+QSet2Question1 -> QSet2Question1Ans1;
+QSet2Question1 -> QSet2Question1Ans2;
+}
+subgraph QSet10{ 
+label = "Check for page damages";
+style=filled;
+color=lightgrey;
+QSet10Question1 -> QSet10Question1Ans3;
+QSet10Question1 -> QSet10Question1Ans4;
+QSet10Question1 -> QSet10Question1Ans5;
+QSet10Question1 -> QSet10Question1Ans6;
+QSet10Question1 -> QSet10Question1Ans7;
+QSet10Question1 -> QSet10Question1Ans8;
+QSet10Question1 -> QSet10Question1Ans1;
+QSet10Question1 -> QSet10Question1Ans2;
+}
+start -> QSet1Question1;
+subgraph QSet1{ 
+label = "Validating the customer comments";
+style=filled;
+color=lightgrey;
+QSet1Question1 -> QSet1Question1Ans2;
+QSet1Question1 -> QSet1Question1Ans1;
+}
+subgraph QSet3{ 
+label = "Is there any visible damage on the cover or pages?";
+style=filled;
+color=lightgrey;
+QSet3Question1 -> QSet3Question1Ans2;
+QSet3Question1 -> QSet3Question1Ans1;
+QSet3Question1 -> QSet3Question1Ans4;
+QSet3Question1 -> QSet3Question1Ans3;
+}
+subgraph QSet9{ 
+label = "Check for cover damages";
+style=filled;
+color=lightgrey;
+QSet9Question1 -> QSet9Question1Ans4;
+QSet9Question1 -> QSet9Question1Ans3;
+QSet9Question1 -> QSet9Question1Ans6;
+QSet9Question1 -> QSet9Question1Ans8;
+QSet9Question1 -> QSet9Question1Ans1;
+QSet9Question1 -> QSet9Question1Ans2;
+}
+QSet11Question1 [label="booksQ-QSet9Question1",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet11Question1Ans8[label="booksQ-QSet9Question1Ans8"];
+QSet11Question1Ans5[label="booksQ-QSet9Question1Ans5"];
+QSet11Question1Ans4[label="booksQ-QSet9Question1Ans4"];
+QSet11Question1Ans6[label="booksQ-QSet9Question1Ans6"];
+QSet11Question1Ans1[label="booksQ-QSet9Question1Ans1"];
+QSet11Question1Ans3[label="booksQ-QSet9Question1Ans3"];
+QSet11Question1Ans2[label="booksQ-QSet9Question1Ans2"];
+QSet11Question2 [label="booksQ-QSet10Question1",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet11Question2Ans5[label="booksQ-QSet10Question1Ans5"];
+QSet11Question2Ans6[label="booksQ-QSet10Question1Ans6"];
+QSet11Question2Ans3[label="booksQ-QSet10Question1Ans3"];
+QSet11Question2Ans4[label="booksQ-QSet10Question1Ans4"];
+QSet11Question2Ans7[label="booksQ-QSet10Question1Ans7"];
+QSet11Question2Ans8[label="booksQ-QSet9Question1Ans6"];
+QSet11Question2Ans1[label="booksQ-QSet10Question1Ans1"];
+QSet11Question2Ans2[label="booksQ-QSet10Question1Ans2"];
+QSet2Question1 [label="booksQ-are-they-accurate",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet2Question1Ans1[label="yes_answer"];
+QSet2Question1Ans1 -> QSet3Question1;
+QSet2Question1Ans2[label="no_answer"];
+QSet2Question1Ans2 -> QSet3Question1;
+QSet10Question1 [label="booksQ-QSet10Question1",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet10Question1Ans3[label="booksQ-QSet10Question1Ans3"];
+QSet10Question1Ans4[label="booksQ-QSet10Question1Ans4"];
+QSet10Question1Ans5[label="booksQ-QSet10Question1Ans5"];
+QSet10Question1Ans6[label="booksQ-QSet10Question1Ans6"];
+QSet10Question1Ans7[label="booksQ-QSet10Question1Ans7"];
+QSet10Question1Ans8[label="booksQ-QSet9Question1Ans6"];
+QSet10Question1Ans1[label="booksQ-QSet10Question1Ans1"];
+QSet10Question1Ans2[label="booksQ-QSet10Question1Ans2"];
+QSet1Question1 [label="booksQ-customer-reason-comments",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet1Question1Ans2[label="no_answer"];
+QSet1Question1Ans2 -> QSet3Question1;
+QSet1Question1Ans1[label="yes_answer"];
+QSet1Question1Ans1 -> QSet2Question1;
+QSet3Question1 [label="booksQ-damage-on-cover-and-pages",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet3Question1Ans2[label="booksQ-cover"];
+QSet3Question1Ans2 -> QSet9Question1;
+QSet3Question1Ans1[label="booksQ-noDamageExceedStandard"];
+QSet3Question1Ans4[label="booksQ-coverAndPages"];
+QSet3Question1Ans4 -> QSet11Question1;
+QSet3Question1Ans3[label="booksQ-pages"];
+QSet3Question1Ans3 -> QSet10Question1;
+QSet9Question1 [label="booksQ-QSet9Question1",shape=ellipse,fillcolor="burlywood",style="filled"];
+QSet9Question1Ans4[label="booksQ-QSet9Question1Ans4"];
+QSet9Question1Ans3[label="booksQ-QSet9Question1Ans3"];
+QSet9Question1Ans6[label="booksQ-QSet9Question1Ans6"];
+QSet9Question1Ans8[label="booksQ-QSet9Question1Ans8"];
+QSet9Question1Ans1[label="booksQ-QSet9Question1Ans1"];
+QSet9Question1Ans2[label="booksQ-QSet9Question1Ans2"];
+}

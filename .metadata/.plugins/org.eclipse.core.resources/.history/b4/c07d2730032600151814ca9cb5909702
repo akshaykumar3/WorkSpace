@@ -1,0 +1,25 @@
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class TreeNode {
+	
+	private String value;
+	private List<Map<String, String>> tupple;
+	private TreeNode leftChild, rightChild;
+
+	/**
+	 * 
+	 */
+	public TreeNode(String value, List<Map<String, String>> tupple, TreeNode leftChild, TreeNode rightChild) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

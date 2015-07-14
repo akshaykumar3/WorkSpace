@@ -1,0 +1,138 @@
+{
+  "titleStringId": "Softline Luggage Questionnaire",
+  "questionSetMap": {
+    "QSet4": {
+      "titleStringId": "whatdamagedoyousee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "softlinesLuggageQ-WhatDamageDoYouSee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet4Question1Ans1": {
+              "stringId": "softlinesLuggageQA-ScratchDentScuffonsurface",
+              "defectMap": {
+                "ScratchDentScuffonSurface": {
+                  "defectId": "ScratchDentScuffonSurface",
+                  "stringId": "Defect-ScratchDentScuffonSurface",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet4Question1Ans2": {
+              "stringId": "softlinesLuggageQA-DirtScuffonwheels",
+              "defectMap": {
+                "DirtScuffonWheels": {
+                  "defectId": "DirtScuffonWheels",
+                  "stringId": "Defect-softlinesLuggageQA-DirtScuffonWheels",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet4Question1Ans3": {
+              "stringId": "softlinesLuggageQA-RipTearHole",
+              "defectMap": {
+                "RipTearHole": {
+                  "defectId": "RipTearHole",
+                  "stringId": "Defect-softlinesLuggageQA-RipTearHole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet4Question1Ans4": {
+              "stringId": "softlinesLuggageQA-BrokenZip",
+              "defectMap": {
+                "BrokenZip": {
+                  "defectId": "BrokenZip",
+                  "stringId": "Defect-softlinesLuggageQA-BrokenZip",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet4Question1Ans5": {
+              "stringId": "softlinesLuggageQA-handlesnotretract",
+              "defectMap": {
+                "HandlesNotRetract": {
+                  "defectId": "HandlesNotRetract",
+                  "stringId": "Defect-softlinesLuggageQA-HandlesNotRetract",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet4Question1Ans8": {
+              "stringId": "softlineLuggageQA-noDamage",
+              "isSuperOption": true,
+              "displayOrder": 7
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Itemhasdamage",
+      "isDependent": false,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "softlinesLuggageQ-itemhasdamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

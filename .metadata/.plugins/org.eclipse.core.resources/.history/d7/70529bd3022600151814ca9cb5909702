@@ -1,0 +1,24 @@
+import java.util.List;
+
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class TreeNode {
+	
+	private String value;
+	private List tupple;
+	
+
+	/**
+	 * 
+	 */
+	public TreeNode() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

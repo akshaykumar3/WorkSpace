@@ -1,0 +1,136 @@
+{
+  "titleStringId": "DVD Questionnaire",
+  "questionSetMap": {
+    "QSet6": {
+      "titleStringId": "Is the case crushed, broken?",
+      "isDependent": true,
+      "questionMap": {
+        "DVDQ-caseCrushed": {
+          "stringId": "DVDQ-caseCrushed",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "caseCrushed-no_answer": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "caseCrushed-yes_answer": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "Is the item sealed in plastic shrink wrap?",
+      "isDependent": false,
+      "questionMap": {
+        "DVDQ-itemsealopen": {
+          "stringId": "DVDQ-itemsealopen",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "iteamSealed-no_answer": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "iteamSealed-yes_answer": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "What signs of use do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "DVDQ-signsOfUse",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "DVDQA-LooseDisc": {
+              "stringId": "DVDQA-LooseDisc",
+              "defectMap": {
+                "LooseDisc": {
+                  "defectId": "LooseDisc",
+                  "stringId": "DVDQA-LooseDisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "DVDQA-coverDamagedOrMissing": {
+              "stringId": "DVDQA-coverDamagedOrMissing",
+              "defectMap": {
+                "CoverDamagedOrMissing": {
+                  "defectId": "CoverDamagedOrMissing",
+                  "stringId": "DVDQA-coverDamagedOrMissing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "DVDQA-scratchedOrDamaged": {
+              "stringId": "DVDQA-scratchedOrDamaged",
+              "defectMap": {
+                "ScratchedOrDamagedDisc": {
+                  "defectId": "ScratchedOrDamagedDisc",
+                  "stringId": "DVDQA-scratchedOrDamaged",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "DVDQA-missingDisc": {
+              "stringId": "DVDQA-missingDisc",
+              "defectMap": {
+                "MissingDisc": {
+                  "defectId": "MissingDisc",
+                  "stringId": "DVDQA-missingDisc",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "DVDQA-NoDamage": {
+              "stringId": "DVDQA-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

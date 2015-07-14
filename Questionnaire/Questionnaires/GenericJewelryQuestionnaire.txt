@@ -1,0 +1,337 @@
+{
+  "titleStringId": "Generic Jewelry Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Does the item have any signs of damage or wear?",
+      "isDependent": true,
+      "questionMap": {
+        "GJQ-itemsignsofwear": {
+          "stringId": "GJQ-itemsignsofwear",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "GJQ-no_answer": {
+              "stringId": "no_answer",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "GJQ-yes_answer": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "titleStringId": "Is the item packaging damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "GJQ-itemPackagingDamaged": {
+          "stringId": "GJQ-itemPackagingDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "GJQ-pkg-no_answer": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "GJQ-pkg-yes_answer": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet6": {
+      "titleStringId": "What damage do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "GJQ-whatdamagedoyousee": {
+          "stringId": "GJQ-whatdamagedoyousee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "GJQ-BrokenClasp": {
+              "stringId": "GJQ-BrokenClasp",
+              "defectMap": {
+                "BrokenClasp": {
+                  "defectId": "BrokenClasp",
+                  "stringId": "Defect-BrokenClasp",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "GJQ-DirtOrGrime": {
+              "stringId": "GJQ-DirtOrGrime",
+              "defectMap": {
+                "DirtOrGrime": {
+                  "defectId": "DirtOrGrime",
+                  "stringId": "Defect-DirtOrGrime",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "GJQ-BrokenChain": {
+              "stringId": "GJQ-BrokenChain",
+              "defectMap": {
+                "BrokenChain": {
+                  "defectId": "BrokenChain",
+                  "stringId": "Defect-BrokenChain",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "GJQ-MissingStone": {
+              "stringId": "GJQ-MissingStone",
+              "defectMap": {
+                "MissingStone": {
+                  "defectId": "MissingStone",
+                  "stringId": "Defect-MissingStone",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "GJQ-KnottedOrTangledNecklace": {
+              "stringId": "GJQ-KnottedOrTangledNecklace",
+              "defectMap": {
+                "KnottedOrTangledNecklace": {
+                  "defectId": "KnottedOrTangledNecklace",
+                  "stringId": "Defect-KnottedOrTangledNecklace",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "GJQ-tarnishedORscratches": {
+              "stringId": "GJQ-tarnishedORscratches",
+              "defectMap": {
+                "tarnishedORscratches": {
+                  "defectId": "tarnishedORscratches",
+                  "stringId": "Defect-tarnishedORscratches",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "GJQ-DentsorBentItem": {
+              "stringId": "GJQ-DentsorBentItem",
+              "defectMap": {
+                "DentsorBentItem": {
+                  "defectId": "DentsorBentItem",
+                  "stringId": "Defect-DentsorBentItem",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "GJQ-doesnotexceed": {
+              "stringId": "GJQ-doesnotexceed",
+              "isSuperOption": true,
+              "displayOrder": 9
+            },
+            "GJQ-LooseStone": {
+              "stringId": "GJQ-LooseStone",
+              "defectMap": {
+                "LooseStone": {
+                  "defectId": "LooseStone",
+                  "stringId": "Defect-LooseStone",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "What damage do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "GJQ-pkg-whatdamagedoyousee": {
+          "stringId": "GJQ-pkg-whatdamagedoyousee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "GJQ-CutCrushOrTear": {
+              "stringId": "GJQ-CutCrushOrTear",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "GJQ-HoleInThePackage": {
+              "stringId": "GJQ-HoleInThePackage",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "GJQ-pkg-doesnotexceed": {
+              "stringId": "GJQ-doesnotexceed",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": true,
+              "displayOrder": 8
+            },
+            "GJQ-MoreThanOneCrushedCorner": {
+              "stringId": "GJQ-MoreThanOneCrushedCorner",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "MoreThanOneCrushedCorner": {
+                  "defectId": "MoreThanOneCrushedCorner",
+                  "stringId": "Defect-MoreThanOneCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "GJQ-WaterOrOil": {
+              "stringId": "GJQ-WaterOrOil",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "GJQ-CustomerWritingsOrMarks": {
+              "stringId": "GJQ-CustomerWritingsOrMarks",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-CustomerWritingsOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

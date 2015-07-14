@@ -1,0 +1,51 @@
+{
+  "titleStringId": "Force Destroy Questionnaire",
+  "questionSetMap": {
+    "QSet1": {
+      "titleStringId": "What damage do you see?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "CN-forceDestroyQ-whatDamageDoYouSee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet1Question1Ans2": {
+              "stringId": "CN-forceDestroyQ-noWarningAndBrokenGlassLeakingFluid",
+              "defectMap": {
+                "BrokenGlassLeakingFluidWithoutWarning": {
+                  "defectId": "BrokenGlassLeakingFluidWithoutWarning",
+                  "stringId": "Defect-forceDestroyQ-noWarningAndBrokenGlassLeakingFluid",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Fulfiller"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet1Question1Ans1": {
+              "stringId": "CN-forceDestroyQ-hasWarningandBrokenGlassLeakingFluid",
+              "defectMap": {
+                "BrokenGlassLeakingFluid": {
+                  "defectId": "BrokenGlassLeakingFluid",
+                  "stringId": "Defect-forceDestroyQ-hasWarningandBrokenGlassLeakingFluid",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Carrier"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

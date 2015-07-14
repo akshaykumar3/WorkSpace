@@ -1,0 +1,409 @@
+{
+  "titleStringId": "Softline Shoe Questionnaire",
+  "questionSetMap": {
+    "QSet1": {
+      "titleStringId": "Is the shipping box damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "ShoeQ-ItemPackageDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet1Question1Ans2": {
+              "stringId": "ShoeQA-NoDamageExeceedingStandard",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet1Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet3",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet4": {
+      "titleStringId": "ShoeQ-WhatDamageDoYouSee",
+      "isDependent": true,
+      "questionMap": {
+        "QSet4Question1": {
+          "stringId": "ShoeQ-WhatDamageDoYouSee-Left",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet4Question1Ans11": {
+              "stringId": "ShoeQA-Creasing",
+              "defectMap": {
+                "Left-Creasing": {
+                  "defectId": "Left-Creasing",
+                  "stringId": "Defect-Left-Creasing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet4Question1Ans1": {
+              "stringId": "ShoeQA-Stains",
+              "defectMap": {
+                "Left-Stains": {
+                  "defectId": "Left-Stains",
+                  "stringId": "Defect-Left-Stains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet4Question1Ans10": {
+              "stringId": "ShoeQA-DamagedLacesZippersFastners",
+              "defectMap": {
+                "Left-DamagedLacesZippersFastners": {
+                  "defectId": "Left-DamagedLacesZippersFastners",
+                  "stringId": "Defect-Left-DamagedLacesZippersFastners",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "QSet4Question1Ans2": {
+              "stringId": "ShoeQA-Odor",
+              "defectMap": {
+                "Left-Odor": {
+                  "defectId": "Left-Odor",
+                  "stringId": "Defect-Left-Odor",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet4Question1Ans4": {
+              "stringId": "ShoeQA-Holes",
+              "defectMap": {
+                "Left-Holes": {
+                  "defectId": "Left-Holes",
+                  "stringId": "Defect-Left-Holes",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet4Question1Ans5": {
+              "stringId": "ShoeQA-InsideDirty",
+              "defectMap": {
+                "Left-InsideDirty": {
+                  "defectId": "Left-InsideDirty",
+                  "stringId": "Defect-Left-InsideDirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet4Question1Ans6": {
+              "stringId": "ShoeQA-BottomDirty",
+              "defectMap": {
+                "Left-BottomDirty": {
+                  "defectId": "Left-BottomDirty",
+                  "stringId": "Defect-Left-BottomDirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet4Question1Ans8": {
+              "stringId": "ShoeQA-NoDamageExeceedingStandard",
+              "isSuperOption": true,
+              "displayOrder": 10
+            },
+            "QSet4Question1Ans9": {
+              "stringId": "ShoeQA-LooseStiching",
+              "defectMap": {
+                "Left-LooseStiching": {
+                  "defectId": "Left-LooseStiching",
+                  "stringId": "Defect-Left-LooseStiching",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "ShoeQA-SizeMismatch": {
+              "stringId": "ShoeQA-SizeMismatch",
+              "defectMap": {
+                "SizeMismatch": {
+                  "defectId": "SizeMismatch",
+                  "stringId": "ShoeQA-SizeMismatch",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            }
+          }
+        },
+        "QSet4Question2": {
+          "stringId": "ShoeQ-WhatDamageDoYouSee-Right",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet4Question2Ans11": {
+              "stringId": "ShoeQA-Creasing",
+              "defectMap": {
+                "Right-Creasing": {
+                  "defectId": "Right-Creasing",
+                  "stringId": "Defect-Right-Creasing",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet4Question2Ans9": {
+              "stringId": "ShoeQA-LooseStiching",
+              "defectMap": {
+                "Right-LooseStiching": {
+                  "defectId": "Right-LooseStiching",
+                  "stringId": "Defect-Right-LooseStiching",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet4Question2Ans10": {
+              "stringId": "ShoeQA-DamagedLacesZippersFastners",
+              "defectMap": {
+                "Right-DamagedLacesZippersFastners": {
+                  "defectId": "Right-DamagedLacesZippersFastners",
+                  "stringId": "Defect-Right-DamagedLacesZippersFastners",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "QSet4Question2Ans8": {
+              "stringId": "ShoeQA-NoDamageExeceedingStandard",
+              "isSuperOption": true,
+              "displayOrder": 10
+            },
+            "QSet4Question2Ans6": {
+              "stringId": "ShoeQA-BottomDirty",
+              "defectMap": {
+                "Right-BottomDirty": {
+                  "defectId": "Right-BottomDirty",
+                  "stringId": "Defect-Right-BottomDirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet4Question2Ans5": {
+              "stringId": "ShoeQA-InsideDirty",
+              "defectMap": {
+                "Right-InsideDirty": {
+                  "defectId": "Right-InsideDirty",
+                  "stringId": "Defect-Right-InsideDirty",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet4Question2Ans4": {
+              "stringId": "ShoeQA-Holes",
+              "defectMap": {
+                "Right-Holes": {
+                  "defectId": "Right-Holes",
+                  "stringId": "Defect-Right-Holes",
+                  "defectOwnerList": [
+                    {
+                      "weight": 4,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet4Question2Ans2": {
+              "stringId": "ShoeQA-Odor",
+              "defectMap": {
+                "Right-Odor": {
+                  "defectId": "Right-Odor",
+                  "stringId": "Defect-Right-Odor",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet4Question2Ans1": {
+              "stringId": "ShoeQA-Stains",
+              "defectMap": {
+                "Right-Stains": {
+                  "defectId": "Right-Stains",
+                  "stringId": "Defect-Right-Stains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "ShoeQA-SizeMismatch": {
+              "stringId": "ShoeQA-SizeMismatch",
+              "defectMap": {
+                "SizeMismatch": {
+                  "defectId": "SizeMismatch",
+                  "stringId": "ShoeQA-SizeMismatch",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Itemhasdamage",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "ShoeQ-ItemHasDamage",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet3Question1Ans2": {
+              "stringId": "ShoeQA-NoDamageExeceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet3Question1Ans1": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet5",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet5": {
+      "titleStringId": "AbleToRefurbItem",
+      "isDependent": true,
+      "questionMap": {
+        "QSet5Question1": {
+          "stringId": "ShoeQ-AbleToRefurbItem",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet5Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet4",
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet5Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

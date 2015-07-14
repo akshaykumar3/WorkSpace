@@ -1,0 +1,234 @@
+{
+  "titleStringId": "Hardlines Non Sort Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Seal is intact?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet2Question1": {
+          "stringId": "CN-HardlinesNonSortQ-isSealIntact",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet2Question1Ans1": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet3",
+              "defectMap": {
+                "SealBroken": {
+                  "defectId": "SealBroken",
+                  "stringId": "Defect-apparelQ-sealNotIntact",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet2Question1Ans2": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "titleStringId": "Are the signs of item packaging damages exceeding standards",
+      "isDependent": false,
+      "questionMap": {
+        "QSet1Question1": {
+          "stringId": "CN-HardlinesNonSortQ-itemPackagingDamagesExceedingStandards",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet1Question1Answer4": {
+              "stringId": "CN-HardlinesNonSortQ-wrinkleCrushCutOnSurfaceLongerThanLongEdge",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "WrinkleCrushCut": {
+                  "defectId": "WrinkleCrushCut",
+                  "stringId": "Defect-apparelQ-wrinkleCrushCutOnSurfaceLongerThanLongEdge",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet1Question1Answer3": {
+              "stringId": "CN-HardlinesNonSortQ-moreThan2CrushCut",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-apparelQ-moreThan2CrushCut",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet1Question1Answer2": {
+              "stringId": "CN-HardlinesNonSortQ-tapeStickerLabelonPackaging",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "TapeSealOrShippingLabel": {
+                  "defectId": "TapeSealOrShippingLabel",
+                  "stringId": "Defect-apparelQ-tapeStickerLabelonPackaging",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet1Question1Answer1": {
+              "stringId": "CN-HardlinesNonSortQ-holesBiggerThanBagdeHoleLength",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-apparelQ-holesBiggerThanBageHoleLength",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet1Question1Answer8": {
+              "stringId": "CN-HardlinesNonSortQ-noDamageExceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 8
+            },
+            "QSet1Question1Answer7": {
+              "stringId": "CN-HardlinesNonSortQ-missingPackaging",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "MissingPackaging": {
+                  "defectId": "MissingPackaging",
+                  "stringId": "Defect-apparelQ-missingPackaging",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 7
+            },
+            "QSet1Question1Answer6": {
+              "stringId": "CN-HardlinesNonSortQ-writingOrMarks",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-apparelQ-writingOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "QSet1Question1Answer5": {
+              "stringId": "CN-HardlinesNonSortQ-waterOrStains",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "StainedOrWaterDamaged": {
+                  "defectId": "StainedOrWaterDamaged",
+                  "stringId": "Defect-apparelQ-waterOrStains",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            }
+          }
+        }
+      }
+    },
+    "QSet3": {
+      "titleStringId": "Are there signs of item dagame?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet3Question1": {
+          "stringId": "CN-HardlinesNonSortQ-signsOfItemDamage",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet2Question1Answer2": {
+              "stringId": "CN-HardlinesNonSortQ-SignsOfCustomerUse",
+              "defectMap": {
+                "SignsOfCustomerUse": {
+                  "defectId": "SignsOfCustomerUse",
+                  "stringId": "Defect-apparelQ-SignsOfCustomerUse",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet3Question1Answer3": {
+              "stringId": "CN-HardlinesNonSortQ-noDamageExceedingStandard",
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet3Question1Answer1": {
+              "stringId": "CN-HardlinesNonSortQ-damagedBrokenItem",
+              "defectMap": {
+                "DamagedBrokenItem": {
+                  "defectId": "DamagedBrokenItem",
+                  "stringId": "Defect-apparelQ-damagedBrokenItem",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.beans</groupId>
+  <artifactId>org.springframework.beans</artifactId>
+  <version>0.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20140211.163014</timestamp>
+      <buildNumber>6</buildNumber>
+    </snapshot>
+    <lastUpdated>20140211163014</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <classifier>ovrd-freq</classifier>
+        <extension>zip</extension>
+        <value>0.0.0-20140211.163014-6</value>
+        <updated>20140211163014</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>ctor-freq</classifier>
+        <extension>zip</extension>
+        <value>0.0.0-20140211.162613-5</value>
+        <updated>20140211162613</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>freq</classifier>
+        <extension>zip</extension>
+        <value>0.0.0-20140211.161604-4</value>
+        <updated>20140211161604</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

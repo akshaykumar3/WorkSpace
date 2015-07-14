@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public interface TestInterface {
+
+}

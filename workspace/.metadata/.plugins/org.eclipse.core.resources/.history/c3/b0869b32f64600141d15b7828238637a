@@ -1,0 +1,82 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URI;
+import java.net.URL;
+import java.util.StringTokenizer;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+
+
+public class StockPriceRetriver
+{
+	private static void retirveStockPrices()
+	{
+		String BASE_URL = "https://query.yahooapis.com/v1/public/yql?q=show%20tables&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys" ;
+		
+		try 
+		{
+			URL url = new URL(BASE_URL);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.connect();
+			InputStream in = conn.getInputStream();
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder parser = factory.newDocumentBuilder();
+			Document dc= parser.parse(in);
+			System.out.println(dc.getXmlEncoding());
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+			String text = null;
+			//System.out.println(in);
+			//text = reader.toString();
+			//System.out.println(text);
+		}
+		catch (IOException | ParserConfigurationException | SAXException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		/*
+		// Read in data one line at a time, until all data has been read and stored.
+		while ((text = reader.readLine()) != null)	{
+			// Replace " with empty string to clean up data text
+			text = text.replace("\"", "");
+			StringTokenizer st = new StringTokenizer(text, ",");
+			
+			// Create new Data object to store results
+			CommodityData newData = new CommodityData(st.nextToken(), st.nextToken(), st.nextToken(),
+					st.nextToken(), st.nextToken(), st.nextToken(), st.nextToken(),	st.nextToken(), 
+					st.nextToken(), st.nextToken());
+			
+			// Add data to resulting data list
+			data.add(newData);
+		}
+		
+		return data;
+		*/
+	}
+	
+	public static void main(String[] args)
+	{
+		
+		
+		
+		System.out.println("Test\n");
+		retirveStockPrices();
+		/*https://query.yahooapis.com/v1/public/yql?q=show%20tables&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys*/
+	}
+}

@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+
+/**
+ * @author kumaksha
+ *
+ */
+public class InterfaceTest {
+
+	/**
+	 * 
+	 */
+	public InterfaceTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		InterfacTestClass obj = new InterfacTestClass();
+		obj.fn1();
+		obj.fn2(2);
+	}
+}

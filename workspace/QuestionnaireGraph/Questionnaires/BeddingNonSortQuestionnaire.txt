@@ -1,0 +1,220 @@
+{
+  "titleStringId": "BeddingNonSortable Questionnaire",
+  "questionSetMap": {
+    "QSet6": {
+      "titleStringId": "Is the item sealed in plastic shrink wrap or any tape?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet6Question1": {
+          "stringId": "BeddingNonSortableQ-itemsealopen",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "QSet6Question1Ans2": {
+              "stringId": "no_answer",
+              "dependentQuestionSetId": "QSet7",
+              "defectMap": {
+                "ItemSealOpen": {
+                  "defectId": "ItemSealOpen",
+                  "stringId": "Defect-ItemSealOpen",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 0
+            },
+            "QSet6Question1Ans1": {
+              "stringId": "yes_answer",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "What damage do you see?",
+      "isDependent": false,
+      "questionMap": {
+        "QSet8Question1": {
+          "stringId": "BeddingNonSortableQ-whatdamagedoyousee",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet8Question1Ans5": {
+              "stringId": "BeddingNonSortableQA-customerwritingormarks",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "CustomerWritingsOrMarks": {
+                  "defectId": "CustomerWritingsOrMarks",
+                  "stringId": "Defect-CustomerWritingsOrMarks",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "QSet8Question1Ans4": {
+              "stringId": "BeddingNonSortableQA-wateroroil",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "WaterOrOil": {
+                  "defectId": "WaterOrOil",
+                  "stringId": "Defect-WaterOrOil",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Carrier"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "QSet8Question1Ans3": {
+              "stringId": "BeddingNonSortableQA-morethantwocorner",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "MoreThanTwoCrushedCorner": {
+                  "defectId": "MoreThanTwoCrushedCorner",
+                  "stringId": "Defect-MoreThanTwoCrushedCorner",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet8Question1Ans2": {
+              "stringId": "BeddingNonSortableQA-holeinpack",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "Defect-HoleInThePackage",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet8Question1Ans7": {
+              "stringId": "BeddingNonSortableQA-doesnotexceed",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "QSet8Question1Ans1": {
+              "stringId": "BeddingNonSortableQA-cutcrush",
+              "dependentQuestionSetId": "QSet6",
+              "defectMap": {
+                "CutCrushOrTear": {
+                  "defectId": "CutCrushOrTear",
+                  "stringId": "Defect-CutCrushOrTear",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            }
+          }
+        }
+      }
+    },
+    "QSet7": {
+      "titleStringId": "What damage do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "QSet7Question1": {
+          "stringId": "BeddingNonSortableQ-whatdamagedoyouseewithitem",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "QSet7Question1Ans3": {
+              "stringId": "BeddingNonSortableQA-missingorusedparts",
+              "defectMap": {
+                "MissingOrUsedParts": {
+                  "defectId": "MissingOrUsedParts",
+                  "stringId": "Defect-MissingOrUsedParts",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "QSet7Question1Ans1": {
+              "stringId": "BeddingNonSortableQA-internalsealsorpackagingopen",
+              "defectMap": {
+                "InternalSealOrPackageOpen": {
+                  "defectId": "InternalSealOrPackageOpen",
+                  "stringId": "Defect-InternalSealOrPackageOpen",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "QSet7Question1Ans2": {
+              "stringId": "BeddingNonSortableQA-damagedorbrokenitem",
+              "defectMap": {
+                "DamagedBroken": {
+                  "defectId": "DamagedBroken",
+                  "stringId": "Defect-DamagedBroken",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "QSet7Question1Ans5": {
+              "stringId": "BeddingNonSortableQA-doesnotexceed",
+              "isSuperOption": true,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

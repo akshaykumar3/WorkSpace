@@ -1,0 +1,271 @@
+{
+  "titleStringId": "Jewelry Questionnaire",
+  "questionSetMap": {
+    "QSet2": {
+      "titleStringId": "Does the item have any damage or signs of wear?",
+      "isDependent": true,
+      "questionMap": {
+        "JewelryQ-signsofwear": {
+          "stringId": "JewelryQ-signsOfWear",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "signsOfWear-yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet6",
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "signsOfWear-no": {
+              "stringId": "Jewelery-NoDamage",
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    },
+    "QSet1": {
+      "titleStringId": "Is the item packaging damaged?",
+      "isDependent": false,
+      "questionMap": {
+        "JewelryQ-PackagingDamaged": {
+          "stringId": "JewelryQ-PackagingDamaged",
+          "questionType": "MultiChoiceSingleAnswer",
+          "answerMap": {
+            "PackagingDamaged-yes": {
+              "stringId": "yes_answer",
+              "dependentQuestionSetId": "QSet8",
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "PackagingDamaged-no": {
+              "stringId": "Jewelery-NoDamage",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": false,
+              "displayOrder": 0
+            }
+          }
+        }
+      }
+    },
+    "QSet6": {
+      "titleStringId": "What damage or signs of wear do you see?",
+      "isDependent": true,
+      "questionMap": {
+        "Jewelery-signsOfDamage-NoDamage": {
+          "stringId": "JeweleryQ-whatDamage",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "JewelryQA-scratchesOrDent": {
+              "stringId": "JewelryQA-scratchesOrDent",
+              "defectMap": {
+                "ScratchesOrDents": {
+                  "defectId": "ScratchesOrDents",
+                  "stringId": "JewelryQA-scratchesOrDent",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "JewelryQA-notRemovable": {
+              "stringId": "JewelryQA-notRemovable",
+              "defectMap": {
+                "SignsOfCustomerUse": {
+                  "defectId": "SignsOfCustomerUse",
+                  "stringId": "JewelryQA-notRemovable",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            },
+            "JeweleryDamage-NoDamage": {
+              "stringId": "Jewelery-NoDamage",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "JewelryQA-otherDamages": {
+              "stringId": "JewelryQA-otherDamages",
+              "defectMap": {
+                "Other": {
+                  "defectId": "Other",
+                  "stringId": "JewelryQA-otherDamages",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "JewelryQA-scuffingsExceedingStandards": {
+              "stringId": "JewelryQA-scuffingsExceedingStandards",
+              "defectMap": {
+                "Scuffings": {
+                  "defectId": "Scuffings",
+                  "stringId": "JewelryQA-scuffingsExceedingStandards",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            }
+          }
+        }
+      }
+    },
+    "QSet8": {
+      "titleStringId": "Are there signs of item packaging damages exceeding the standards?",
+      "isDependent": true,
+      "questionMap": {
+        "JeweleryQ-itemPackaging": {
+          "stringId": "JeweleryQ-itemPackaging",
+          "questionType": "MultiChoiceMultiAnswer",
+          "answerMap": {
+            "JeweleryWhatdamage-NoDamage": {
+              "stringId": "Jewelery-NoDamage",
+              "dependentQuestionSetId": "QSet2",
+              "isSuperOption": true,
+              "displayOrder": 0
+            },
+            "JewelryQA-deformedEdgesAndBruises": {
+              "stringId": "JewelryQA-deformedEdgesAndBruises",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "DeformedEdgeBruises": {
+                  "defectId": "DeformedEdgeBruises",
+                  "stringId": "JewelryQA-deformedEdgesAndBruises",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Fulfiller"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 2
+            },
+            "JewelryQA-stainsOrColorDefects": {
+              "stringId": "JewelryQA-stainsOrColorDefects",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "PackageStainOrColorDefects": {
+                  "defectId": "PackageStainOrColorDefect",
+                  "stringId": "JewelryQA-stainsOrColorDefects",
+                  "defectOwnerList": [
+                    {
+                      "weight": 2,
+                      "owner": "Vendor"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 5
+            },
+            "JewelryQA-cuttingWritings": {
+              "stringId": "JewelryQA-cuttingWritings",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "CuttingsWritings": {
+                  "defectId": "CuttingsWritings",
+                  "stringId": "JewelryQA-cuttingWritings",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 3
+            },
+            "LocalCompressionsFractures": {
+              "stringId": "LocalCompressionsFractures",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "Jewelry-compressionsOrfractures": {
+                  "defectId": "Jewelry-compressionsOrfractures",
+                  "stringId": "JewelryQA-compressionsOrfractures",
+                  "defectOwnerList": [
+                    {
+                      "weight": 3,
+                      "owner": "Fulfiller"
+                    },
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 4
+            },
+            "JewelryQA-hole": {
+              "stringId": "JewelryQA-hole",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "HoleInThePackage": {
+                  "defectId": "HoleInThePackage",
+                  "stringId": "JewelryQA-hole",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 6
+            },
+            "JewelryQA-surfaceTorn": {
+              "stringId": "JewelryQA-surfaceTorn",
+              "dependentQuestionSetId": "QSet2",
+              "defectMap": {
+                "TornSurface": {
+                  "defectId": "TornSurface",
+                  "stringId": "JewelryQA-surfaceTorn",
+                  "defectOwnerList": [
+                    {
+                      "weight": 1,
+                      "owner": "Customer"
+                    }
+                  ]
+                }
+              },
+              "isSuperOption": false,
+              "displayOrder": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
